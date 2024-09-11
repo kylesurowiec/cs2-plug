@@ -1,26 +1,44 @@
 {
   "name": "cs2-plug",
-  "private": true,
   "version": "0.1.0",
+  "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "tauri": "tauri"
+    "start:dev": "pnpm tauri dev",
+    "start:ui": "next dev",
+    "build": "next build",
+    "start:prod": "next start",
+    "lint": "pnpm eslint"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@tauri-apps/api": ">=2.0.0-rc.0",
-    "@tauri-apps/plugin-shell": ">=2.0.0-rc.0"
+    "@tanstack/react-form": "^0.32.0",
+    "daisyui": "^4.12.10",
+    "next": "14.2.9",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@types/react": "^18.2.15",
-    "@types/react-dom": "^18.2.7",
-    "@vitejs/plugin-react": "^4.2.1",
-    "typescript": "^5.2.2",
-    "vite": "^5.3.1",
-    "@tauri-apps/cli": ">=2.0.0-rc.0"
+    "@eslint/compat": "^1.1.1",
+    "@eslint/js": "^9.10.0",
+    "@next/eslint-plugin-next": "^14.2.9",
+    "@tauri-apps/cli": "^1.6.1",
+    "@types/node": "^22.5.4",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.5.0",
+    "@typescript-eslint/parser": "^8.5.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.10.0",
+    "eslint-config-next": "14.2.9",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-react": "^7.35.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "postcss": "^8.4.45",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.6",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.5.0"
   }
 }
