@@ -29,7 +29,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.kylesurowiec.cs2.plug",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -56,10 +56,11 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
+        "height": 1080,
         "resizable": true,
         "title": "CS2 Plug",
-        "width": 800
+        "width": 1440,
+        "theme": "Dark"
       }
     ]
   }

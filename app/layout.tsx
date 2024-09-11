@@ -4,6 +4,7 @@ import type { ReactNode } from 'react';
 import './globals.css';
 
 import localFont from 'next/font/local';
+import { Sidebar } from './_components/Sidebar';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -28,7 +29,9 @@ type Props = Readonly<{
 export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Sidebar>{children}</Sidebar>
+      </body>
     </html>
   );
 }
