@@ -1,8 +1,9 @@
 'use client';
 
+import type { RefObject } from 'react';
+
 import { useEffect } from 'react';
 
-import type { RefObject } from 'react';
 
 /**
  * Subscribes to a DOM event and performs cleanup on unmount.

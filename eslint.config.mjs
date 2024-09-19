@@ -23,6 +23,7 @@ export default [
       'eslint.config.mjs',
       'next.config.mjs',
       'node_modules',
+      'out',
       'postcss.config.mjs',
       'prettier.config.mjs',
       'scripts',
@@ -37,7 +38,12 @@ export default [
       import: pluginImport,
     },
     languageOptions: {
-      parser: tsParser,
+      parserOptions: {
+        project: 'tsconfig.json',
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
     },
     rules: {
       '@typescript-eslint/ban-ts-comment': 'off',
