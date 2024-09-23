@@ -4,7 +4,6 @@ import type { RefObject } from 'react';
 
 import { useEffect } from 'react';
 
-
 /**
  * Subscribes to a DOM event and performs cleanup on unmount.
  * By default the event listener will be attached to the `window`

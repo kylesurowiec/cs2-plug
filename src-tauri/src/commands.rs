@@ -2,10 +2,12 @@ use std::net::TcpStream;
 
 use serde::Deserialize;
 use ssh2::Session;
+use ts_rs::TS;
 
 use crate::error::CS2PlugError;
 
-#[derive(Deserialize)]
+#[derive(Deserialize, TS)]
+#[ts(export)]
 pub struct ServerCredentials {
     pub ip_address: String,
     pub port: String,
